@@ -1,0 +1,7 @@
+[
+{
+    "directory": "/home/mcarter/projects/llvmint/chauffeur/test",
+    "command": "clang /home/mcarter/projects/llvmint/chauffeur/test/test.c",
+    "file": "/home/mcarter/projects/llvmint/chauffeur/test/test.c"
+}
+]
