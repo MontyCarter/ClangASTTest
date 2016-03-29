@@ -83,7 +83,13 @@ include_directories(include)
 add_executable(basic
   basic.cpp)
 
+add_executable(basicVisitor
+  basicVisitor.cpp)
+
 target_link_libraries(basic ${CLANG_LIBS})
 target_link_libraries(basic ${LLVM_LDFLAGS})
+target_link_libraries(basicVisitor ${CLANG_LIBS})
+target_link_libraries(basicVisitor ${LLVM_LDFLAGS})
 
 set_target_properties(basic PROPERTIES COMPILE_FLAGS "${CXXFLAGS} ${LLVM_CXXFLAGS}")
+set_target_properties(basicVisitor PROPERTIES COMPILE_FLAGS "${CXXFLAGS} ${LLVM_CXXFLAGS}")
